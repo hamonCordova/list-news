@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/news_listview_item_linear_news_header"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#0277BD"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/news_listview_item_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Globo"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/news_listview_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:text="17/02/1999 01:21:33"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+
+    <!--SHADOW LINE BELOW HEADER-->
+    <View
+        android:layout_below="@+id/news_listview_item_linear_news_header"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/shadow_line"/>
+
+    <!--NEWS CONTENT-->
+    <RelativeLayout
+        android:layout_below="@+id/news_listview_item_linear_news_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/news_listview_item_image"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:background="@drawable/no_image" />
+
+        <TextView
+            android:id="@+id/news_listview_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/news_listview_item_image"
+            android:text="Tiroteio em escola dos Estados Unidos deixa feridos; assista ao vídeo"
+            android:textColor="#0277BD"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/news_listview_item_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/news_listview_item_title"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/news_listview_item_image"
+            android:text="Description Description Description Descripescription Description" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
